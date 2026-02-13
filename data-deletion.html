@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Data Deletion Instructions - Avra</title>
+  <style>
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.6;margin:0;background:#0b1020;color:#e8ecff}
+    header,main,footer{max-width:900px;margin:0 auto;padding:24px}
+    header{padding-top:40px}
+    h1,h2{line-height:1.25}
+    a{color:#9bb6ff}
+    .card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:18px;margin:16px 0}
+    .muted{opacity:.85}
+    ol,ul{padding-left:18px}
+    code{background:rgba(255,255,255,.08);padding:2px 6px;border-radius:8px}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Data Deletion Instructions</h1>
+    <p class="muted">Last updated: <span id="lastUpdated">2026-02-13</span></p>
+    <div class="card">
+      <p>
+        Avra provides a way for users and businesses to request deletion of data associated with their use of the Service,
+        including data obtained through Meta integrations (WhatsApp/Messenger/Instagram) where applicable.
+      </p>
+    </div>
+  </header>
+
+  <main>
+    <div class="card">
+      <h2>How to request deletion</h2>
+      <ol>
+        <li>
+          Send an email to: <a href="mailto:privacy@avra.example">privacy@avra.example</a>
+        </li>
+        <li>
+          Use the subject line: <code>Data Deletion Request</code>
+        </li>
+        <li>
+          In the email body, include:
+          <ul>
+            <li>Your Avra account email (or merchant workspace name)</li>
+            <li>Your Meta Business / WABA / Page identifiers (if known)</li>
+            <li>Which channels to delete (WhatsApp / Messenger / Instagram)</li>
+          </ul>
+        </li>
+      </ol>
+      <p class="muted">
+        Replace the email above with your real support/privacy email before publishing.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>What we delete</h2>
+      <p>After verifying the request, we will delete (or anonymize where appropriate):</p>
+      <ul>
+        <li>Stored channel credentials/tokens (encrypted secrets)</li>
+        <li>Channel linkage records (business/page/waba mapping)</li>
+        <li>Webhook subscription references tied to your workspace (where applicable)</li>
+        <li>Optional stored message logs/content if your workspace has them enabled</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Timeframe</h2>
+      <p>
+        We typically process deletion requests within <strong>7–30 days</strong>, depending on complexity and legal obligations.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Verification</h2>
+      <p>
+        To protect your data, we may request verification before deletion (e.g., confirming control of the email/workspace).
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Questions</h2>
+      <p>
+        For any questions, contact: <a href="mailto:privacy@avra.example">privacy@avra.example</a>
+      </p>
+    </div>
+  </main>
+
+  <footer class="muted">
+    <p>© <span id="year"></span> Avra. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
